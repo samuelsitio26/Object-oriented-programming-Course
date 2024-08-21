@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "t04-01-01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "student-add#12S20001#Marcelino Manalu#3.28#57\r\nstudent-add#12S20002#Yoga Sihombing#3.04#57\r\nstudent-add#12S20003#Marcel Simanjuntak#2.57#57\r\nstudent-show-all\r\nstudent-add#12S20005#Juan Sitompul#3.17#57\r\nstudent-add#12S20006#Nadya Tambunan#2.98#57\r\nstudent-show-all\r\n---\r\n",
+      "output": "12S20001|Marcelino Manalu|3.28|57\r\n12S20002|Yoga Sihombing|3.04|57\r\n12S20003|Marcel Simanjuntak|2.57|57\r\n12S20001|Marcelino Manalu|3.28|57\r\n12S20002|Yoga Sihombing|3.04|57\r\n12S20003|Marcel Simanjuntak|2.57|57\r\n12S20005|Juan Sitompul|3.17|57\r\n12S20006|Nadya Tambunan|2.98|57\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t04-01-02",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "student-show-all\r\nstudent-add#12S20001#Marcelino Manalu#3.28#57\r\nstudent-add#12S20002#Yoga Sihombing#3.04#57\r\nstudent-add#12S20003#Marcel Simanjuntak#2.57#57\r\nstudent-add#12S20005#Juan Sitompul#3.17#57\r\nstudent-show-all\r\nstudent-add#12S20006#Nadya Tambunan#2.98#57\r\nstudent-add#12S20007#Rufina Sitorus#3.25#57\r\nstudent-add#12S20008#Putri Tampubolon#2.61#57\r\nstudent-add#12S20009#Agnes Marpaung#2.69#57\r\nstudent-show-all\r\nstudent-add#12S20010#Suprianto Sitompul#3.23#57\r\nstudent-add#12S20011#Gabriel Panggabean#2.94#57\r\nstudent-show-all\r\n---\r\n",
+      "output": "12S20001|Marcelino Manalu|3.28|57\r\n12S20002|Yoga Sihombing|3.04|57\r\n12S20003|Marcel Simanjuntak|2.57|57\r\n12S20005|Juan Sitompul|3.17|57\r\n12S20001|Marcelino Manalu|3.28|57\r\n12S20002|Yoga Sihombing|3.04|57\r\n12S20003|Marcel Simanjuntak|2.57|57\r\n12S20005|Juan Sitompul|3.17|57\r\n12S20006|Nadya Tambunan|2.98|57\r\n12S20007|Rufina Sitorus|3.25|57\r\n12S20008|Putri Tampubolon|2.61|57\r\n12S20009|Agnes Marpaung|2.69|57\r\n12S20001|Marcelino Manalu|3.28|57\r\n12S20002|Yoga Sihombing|3.04|57\r\n12S20003|Marcel Simanjuntak|2.57|57\r\n12S20005|Juan Sitompul|3.17|57\r\n12S20006|Nadya Tambunan|2.98|57\r\n12S20007|Rufina Sitorus|3.25|57\r\n12S20008|Putri Tampubolon|2.61|57\r\n12S20009|Agnes Marpaung|2.69|57\r\n12S20010|Suprianto Sitompul|3.23|57\r\n12S20011|Gabriel Panggabean|2.94|57\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t04-02-01",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "student-add#12S20001#Marcelino Manalu#3.28#57\r\nstudent-add#12S20002#Yoga Sihombing#3.04#57\r\nstudent-add#12S20003#Marcel Simanjuntak#2.57#57\r\nstudent-best#2\r\nstudent-add#12S20005#Juan Sitompul#3.17#57\r\nstudent-show-all\r\nstudent-add#12S20006#Nadya Tambunan#2.98#57\r\nstudent-best#2\r\n---\r\n",
+      "output": "12S20001|Marcelino Manalu|3.28|57\r\n12S20002|Yoga Sihombing|3.04|57\r\n12S20001|Marcelino Manalu|3.28|57\r\n12S20002|Yoga Sihombing|3.04|57\r\n12S20003|Marcel Simanjuntak|2.57|57\r\n12S20005|Juan Sitompul|3.17|57\r\n12S20001|Marcelino Manalu|3.28|57\r\n12S20005|Juan Sitompul|3.17|57\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t04-02-02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "student-show-all\r\nstudent-add#12S20001#Marcelino Manalu#3.28#57\r\nstudent-add#12S20002#Yoga Sihombing#3.04#57\r\nstudent-add#12S20003#Marcel Simanjuntak#2.57#57\r\nstudent-add#12S20005#Juan Sitompul#3.17#57\r\nstudent-show-all\r\nstudent-add#12S20006#Nadya Tambunan#2.98#57\r\nstudent-add#12S20007#Rufina Sitorus#3.25#57\r\nstudent-add#12S20008#Putri Tampubolon#2.61#57\r\nstudent-best#2\r\n---\r\n",
+      "output": "12S20001|Marcelino Manalu|3.28|57\r\n12S20002|Yoga Sihombing|3.04|57\r\n12S20003|Marcel Simanjuntak|2.57|57\r\n12S20005|Juan Sitompul|3.17|57\r\n12S20001|Marcelino Manalu|3.28|57\r\n12S20007|Rufina Sitorus|3.25|57\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t04-02-03",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "student-add#12S20001#Marcelino Manalu#3.28#57\r\nstudent-add#12S20002#Yoga Sihombing#3.04#57\r\nstudent-add#12S20003#Marcel Simanjuntak#2.57#57\r\nstudent-add#12S20005#Juan Sitompul#3.17#57\r\nstudent-add#12S20006#Nadya Tambunan#2.98#57\r\nstudent-add#12S20007#Rufina Sitorus#3.25#57\r\nstudent-add#12S20008#Putri Tampubolon#2.61#57\r\nstudent-best#3\r\nstudent-add#12S20009#Agnes Marpaung#2.69#57\r\nstudent-add#12S20010#Suprianto Sitompul#3.23#57\r\nstudent-add#12S20011#Gabriel Panggabean#2.94#57\r\nstudent-best#3\r\n---\r\n",
+      "output": "12S20001|Marcelino Manalu|3.28|57\r\n12S20007|Rufina Sitorus|3.25|57\r\n12S20005|Juan Sitompul|3.17|57\r\n12S20001|Marcelino Manalu|3.28|57\r\n12S20007|Rufina Sitorus|3.25|57\r\n12S20010|Suprianto Sitompul|3.23|57\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}

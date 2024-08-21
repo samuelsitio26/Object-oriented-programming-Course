@@ -1,0 +1,2 @@
+//put your prompt here
+bagimana mengeluarkan out put dengan menggunakan perintah show-print-all di java

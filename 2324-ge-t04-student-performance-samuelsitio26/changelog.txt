@@ -1,0 +1,43 @@
+"input": "
+student-add#12S20001#Marcelino Manalu#3.28#57
+student-add#12S20002#Yoga Sihombing#3.04#57
+student-add#12S20003#Marcel Simanjuntak#2.57#57
+student-show-all
+student-add#12S20005#Juan Sitompul#3.17#57
+student-add#12S20006#Nadya Tambunan#2.98#57
+student-show-all
+---
+",
+"output": "
+12S20001|Marcelino Manalu|3.28|57
+12S20002|Yoga Sihombing|3.04|57
+12S20003|Marcel Simanjuntak|2.57|57
+12S20001|Marcelino Manalu|3.28|57
+12S20002|Yoga Sihombing|3.04|57
+12S20003|Marcel Simanjuntak|2.57|57
+12S20005|Juan Sitompul|3.17|57
+12S20006|Nadya Tambunan|2.98|57
+",
+
+"input": "
+student-show-all
+student-add#12S20001#Marcelino Manalu#3.28#57
+student-add#12S20002#Yoga Sihombing#3.04#57
+student-add#12S20003#Marcel Simanjuntak#2.57#57
+student-add#12S20005#Juan Sitompul#3.17#57
+student-show-all
+student-add#12S20006#Nadya Tambunan#2.98#57
+student-add#12S20007#Rufina Sitorus#3.25#57
+student-add#12S20008#Putri Tampubolon#2.61#57
+student-best#2
+---
+",
+"output": "
+12S20001|Marcelino Manalu|3.28|57
+12S20002|Yoga Sihombing|3.04|57
+12S20003|Marcel Simanjuntak|2.57|57
+12S20005|Juan Sitompul|3.17|57
+12S20001|Marcelino Manalu|3.28|57
+12S20007|Rufina Sitorus|3.25|57
+",
+
