@@ -1,0 +1,5 @@
+// promt gpt
+
+bagaimana caranya membuat code java menjadi Java Database Connectivity
+
+contoh ada folder driver isinya Driver1.java dan ada folder model isinya file course.java, courseopening.java, enrollment.java, lecturer.java, student.java 
