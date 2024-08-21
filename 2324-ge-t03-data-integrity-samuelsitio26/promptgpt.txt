@@ -1,0 +1,10 @@
+//put your prompt here
+pada java untuk mengecek duplikasi string 
+cara mengurutkan masukan berdasarkan kode (primary key) dari masukan 
+12S2203|Object-oriented Programming|3|C
+10S1002|Pemrograman Prosedural|2|D
+menjadi 
+10S1002|Pemrograman Prosedural|2|D
+12S2203|Object-oriented Programming|3|C
+
+cara mencek string bila ```course``` dan ```student``` yang terlibat sudah terlebih dahulu didaftarkan. Bila belum didaftarkan, maka upaya ```enrollment``` 
