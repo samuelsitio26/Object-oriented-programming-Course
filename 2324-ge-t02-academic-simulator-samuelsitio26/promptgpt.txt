@@ -1,0 +1,9 @@
+//put your prompt here
+dalam code java memasukan dan memisahkan # menggunakan apa ? 
+Pada saat mengampilkan keluaran, terlebih dahulu ditampilkan entitas ```academic.model.Course```, kemudian ```academic.model.Student```, dan diikuti dengan ```academic.model.Enrollment```.
+cara mengurutkan masukan berdasarkan kode (primary key) dari masukan 
+12S2203|Object-oriented Programming|3|C
+10S1002|Pemrograman Prosedural|2|D
+menjadi 
+10S1002|Pemrograman Prosedural|2|D
+12S2203|Object-oriented Programming|3|C

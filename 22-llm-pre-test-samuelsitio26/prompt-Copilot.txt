@@ -1,0 +1,6 @@
+List Prompt from Github Copilot:
+buatlah sebuah class dengan nama Exercise dan buatlah sebuah method main di dalamnya ada inputan dan outputan 
+mengassing marga ayah yaitu manurung, sirait, butar-butar, Sitorus
+inputan marga ayah dan marga kekasih 
+jika inputan marga ayah dan marga kekasih sama maka outputan "no" dan jika marga ayah dan marga kekasih berbeda maka outputan "yes"
+

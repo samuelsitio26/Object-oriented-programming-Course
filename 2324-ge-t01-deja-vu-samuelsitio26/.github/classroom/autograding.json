@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "t01-01-01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "",
+      "output": "12S2203|Object-oriented Programming|3|C\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t01-01-02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "",
+      "output": "10S1002|Pemrograman Prosedural|2|D\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t01-02-01",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "",
+      "output": "12S20999|Wiro Sableng|2020|Information Systems\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t01-02-02",
+      "setup": "",
+      "run": "make -s test_04",
+      "input": "",
+      "output": "12S20111|Jaka Sembung|2019|Information Systems\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t01-03-01",
+      "setup": "make compile",
+      "run": "make -s test_05",
+      "input": "12S2203\r\n12S20999\r\n2021/2022\r\neven\r\n",
+      "output": "12S2203|12S20999|2021/2022|even|None\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t01-03-02",
+      "setup": "make compile",
+      "run": "make -s test_05",
+      "input": "12S2203\r\n12S20111\r\n2020/2021\r\neven\r\n",
+      "output": "12S2203|12S20111|2020/2021|even|None\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}

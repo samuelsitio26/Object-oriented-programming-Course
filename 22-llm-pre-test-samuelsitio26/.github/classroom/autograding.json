@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "t00-01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "sitorus\r\npardede",
+      "output": "yes",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 40
+    },
+    {
+      "name": "t00-02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "sitorus\r\nsitorus",
+      "output": "no",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 30
+    },
+    {
+      "name": "t00-03",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "pardede\r\nsitorus",
+      "output": "no",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 30
+    }
+  ]
+}

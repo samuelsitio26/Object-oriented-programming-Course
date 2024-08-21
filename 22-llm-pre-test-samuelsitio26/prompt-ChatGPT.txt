@@ -1,0 +1,8 @@
+List Prompt from ChatGPT:
+buatlah sebuah program java dengan nama Exercise dan buatlah sebuah method main di dalamnya ada inputan dan outputan mengassing marga ayah yaitu manurung, sirait, butar-butar, Sitorus inputan marga ayah dan marga kekasih  jika inputan marga ayah dan marga kekasih sama maka outputan "no" dan jika marga ayah dan marga kekasih berbeda maka outputan "yes"
+program java untuk meng assign marga ayah laki-laki yaitu : manurung, sirait, butar-butar, Sitorus dan marga ayah kekasih akan di bandingkan dengan marga ayah laki-laki, menggunakan apa untuk memandingkan string tersebut ? 
+kenapa ini error [{ "resource": "/D:/SEMESTER 4/Pemrograman berorientasi Objek/github 3/22-llm-pre-test-samuelsitio26/src/exercise/env/Exercise.java", "owner": "_generated_diagnostic_collection_name_#4", "code": "536871799", "severity": 4, "message": "Resource leak: 'scanner' is never closed", "source": "Java", "startLineNumber": 15, "startColumn": 17, "endLineNumber": 15, "endColumn": 24 }]
+untuk contoh inputan sebagai berikut : sitorus\r\npardede menggunakan function apa di program tersebut ?
+dalam code  tersebut ketika menginput marga ayah laki-laki yang salah maka untuk membandingkan  string antara ayah laki-laki dan ayah kekasih akan mernilai 'no'
+contoh  ketika marga ayah laki-laki merupakan "Manurung", "Sirait", "Butar-Butar", "Sitorus" 
+maka ketika inputan tidak sesuai dengan marga ayah lelaki tidak akan dapat di eksekusi karena dalam hal nya itu bukan merupakan marga dari ayah laki-laki tersebut  contohnya  "input": "pardede\r\nsitorus", "output": "no",

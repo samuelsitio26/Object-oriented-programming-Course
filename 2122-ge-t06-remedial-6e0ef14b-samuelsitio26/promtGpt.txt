@@ -1,0 +1,25 @@
+//put your prompt here
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: Range [0, -1) out of bounds for length 1
+        at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+        at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+        at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+        at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+        at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+        at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+        at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+        at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4861)
+        at java.base/java.lang.String.substring(String.java:2830)
+        at academic.driver.Driver1.main(Driver1.java:186)
+make: *** [Makefile:5: test_01] Error 1
+
+D:\SEMESTER 4\Pemrograman berorientasi Objek\github 3\2122-ge-t06-remedial-6e0ef14b-samuelsitio26>enrollment-remedial#12S1101#12S20003#2020/2021#odd#AB
+'enrollment-remedial#12S1101#12S20003#2020' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\SEMESTER 4\Pemrograman berorientasi Objek\github 3\2122-ge-t06-remedial-6e0ef14b-samuelsitio26>student-details#12S20003
+'student-details#12S20003' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\SEMESTER 4\Pemrograman berorientasi Objek\github 3\2122-ge-t06-remedial-6e0ef14b-samuelsitio26>---
+'---' is not recognized as an internal or external command,
+operable program or batch file.

@@ -1,0 +1,7 @@
+List Prompt from ChatGPT:
+berikut adalah code lanjutan untuk kemudian akan di tambahkan marga ibu laki-laki :
+kenapa ada error berikut terjadi: code
+bagaimana cara mengatasih error berikut ? src\exercise\env\exercise.java:21: error: method checkMarga in class exercise cannot be applied to given types; String result = checkMarga(margaAyah, margaIbu, margaAyahLaki, margaIbuLaki);    ^
+dalam program java bagaimana format struktur input dari : marga ayah pria, marga ayah kekasih, marga ibu pria, marga ibu kekasih dengan format output  "yes" atau "no"  dalam program java bagaimana cara membandingkan string seperti berikut : ketika marga yang di inputkan itu sesuai dengan yang di assingn maka kode bisa di eksekusi contohnya marga ayah pria , marga ayah kekasih, marga ibu pria, marga ibu kekasih berbeda maka outputnya akan bernilai "yes" , kemudian sebaliknya ketika marga ayah pria, marga ayah kekasih, marga ibu pria, marga ibu kekasih sama maka outpunya "no" 
+
+

@@ -1,0 +1,4 @@
+//put your prompt here
+modifikasi code agar memiliki inputan  dalam java  Pada saat dieksekusi, ```Driver3``` tidak akan membaca parameter dari command line argument. Sebagai gantinya, ```Driver3``` akan membaca masukan dari interaksi dengan pengguna secara interaktif. Sebagai gantinya, ```Driver3``` akan membaca masukan dari interaksi dengan pengguna secara interaktif. Pengguna akan memberikan empat buah baris masukan berupa kode mata kuliah (```code```), NIM mahasiswa (```id```), ```academic year```, dan ```semester```.
+kemudian akan menginstansiasi sebuah objek dari kelas ```Enrollment``` dengan memanfaatkan keempat input tersebut. Perlu diingat bahwa by default ```grade``` adalah ```None```
+

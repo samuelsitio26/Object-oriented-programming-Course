@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "t00-01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "",
+      "output": "Hello, world!",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 50
+    },
+    {
+      "name": "t00-02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "",
+      "output": "Hello, Java!",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 50
+    }
+  ]
+}
