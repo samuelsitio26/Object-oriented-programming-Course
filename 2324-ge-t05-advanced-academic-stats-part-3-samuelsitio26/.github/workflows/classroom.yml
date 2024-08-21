@@ -1,0 +1,45 @@
+name: Autograding Tests
+'on':
+- push
+- workflow_dispatch
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: t05-01-01
+      id: t05-01-01
+      uses: education/autograding-io-grader@v1
+      with:
+        test-name: t05-01-01
+        command: make -s test_01
+        input: "lecturer-add#0130058501#Parmonangan Rotua Togatorop#PAT#mona.togatorop@del.ac.id#InformationSystems\r\nlecturer-add#0114129002#Iustisia Natalia Simbolon#IUS#iustisia.simbolon@del.ac.id#Informatics\r\nlecturer-add#0124108201#Rosni
+          Lumbantoruan#RSL#rosni@del.ac.id#Information Systems\r\ncourse-add#12S2102#Basisdata#4#C#PAT,IUS,RSL\r\ncourse-add#12S1101#Dasar
+          Sistem Informasi#3#D#IUS\r\nstudent-add#12S20001#Marcelino Manalu#2020#Information
+          Systems\r\nenrollment-add#12S2102#12S20001#2021/2022#odd\r\nstudent-add#12S20002#Yoga
+          Sihombing#2020#Information Systems\r\nenrollment-add#12S2102#12S20002#2021/2022#odd\r\nenrollment-grade#12S2102#12S20002#2021/2022#odd#AB\r\nstudent-add#12S20001#Marcelino
+          Manalu#2020#Information Systems\r\nstudent-add#12S20002#Yoga Sihombing#2020#Information
+          Systems\r\nstudent-add#12S20003#Marcel Simanjuntak#2020#Information Systems\r\nenrollment-add#12S1101#12S20001#2020/2021#odd\r\nenrollment-add#12S1101#12S20002#2020/2021#odd\r\nenrollment-add#12S1101#12S20003#2020/2021#odd\r\nenrollment-grade#12S1101#12S20001#2020/2021#odd#B\r\nenrollment-grade#12S1101#12S20002#2020/2021#odd#B\r\nenrollment-grade#12S1101#12S20003#2020/2021#odd#B\r\n---\r\n"
+        expected-output: "0130058501|Parmonangan Rotua Togatorop|PAT|mona.togatorop@del.ac.id|Information
+          Systems\r\n0114129002|Iustisia Natalia Simbolon|IUS|iustisia.simbolon@del.ac.id|Informatics\r\n0124108201|Rosni
+          Lumbantoruan|RSL|rosni@del.ac.id|Information Systems\r\n12S2102|Basisdata|4|C|PAT
+          (mona.togatorop@del.ac.id);IUS (iustisia.simbolon@del.ac.id);RSL (rosni@del.ac.id)\r\n12S1101|Dasar
+          Sistem Informasi|3|D|IUS (iustisia.simbolon@del.ac.id)\r\n12S20001|Marcelino
+          Manalu|2020|Information Systems\r\n12S20002|Yoga Sihombing|2020|Information
+          Systems\r\n12S20003|Marcel Simanjuntak|2020|Information Systems\r\n12S2102|12S20001|2021/2022|odd|None\r\n12S2102|12S20002|2021/2022|odd|AB\r\n12S1101|12S20001|2020/2021|odd|B\r\n12S1101|12S20002|2020/2021|odd|B\r\n12S1101|12S20003|2020/2021|odd|B\r\n"
+        comparison-method: exact
+        timeout: 1
+        max-score: 20
+    - name: Autograding Reporter
+      uses: education/autograding-grading-reporter@v1
+      env:
+        T05-01-01_RESULTS: "${{steps.t05-01-01.outputs.result}}"
+      with:
+        runners: t05-01-01

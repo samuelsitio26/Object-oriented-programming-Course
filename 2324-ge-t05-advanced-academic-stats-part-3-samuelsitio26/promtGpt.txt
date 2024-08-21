@@ -1,0 +1,50 @@
+//put your prompt here
+Refesentasi dari tutorial dan tugas 
+konsep Applying Inheritance dalam java menerapkan pendekatan top-down maupun bottom-up untuk menemukan potensi ! contoh code
+contoh lain dalam inheritance dalam code kampus dimana ada :
+mahasiswa, dosen, mata kuliah, enrollment 
+
+perbaiki error berikut !
+D:\samuel sitio\SAMUEL\Pemrograman berorientasi Objek\github 3\2324-ge-t05-advanced-academic-stats-samuelsitio26>make comp
+ile
+javac src/academic/model/*.java src/academic/driver/*.java -d bin
+src\academic\driver\Driver1.java:42: error: constructor Student in class Student cannot be applied to given types;
+                Student student = new Student(code, name, year, program);
+                                  ^
+  required: String,String,String,String,String
+  found:    String,String,String,String
+  reason: actual and formal argument lists differ in length
+src\academic\driver\Driver1.java:75: error: constructor Lecturer in class Lecturer cannot be applied to given types;
+                Lecturer lecturer = new Lecturer(id, name, initial, email, studyProgram);
+                                    ^
+  required: String,String,String,String,String,String
+  found:    String,String,String,String,String
+  reason: actual and formal argument lists differ in length
+src\academic\driver\Driver2.java:49: error: constructor Student in class Student cannot be applied to given types;
+                        Student student = new Student(code, name, year, program);
+                                          ^
+  required: String,String,String,String,String
+  found:    String,String,String,String
+  reason: actual and formal argument lists differ in length
+src\academic\driver\Driver2.java:100: error: constructor Lecturer in class Lecturer cannot be applied to given types;
+                Lecturer lecturer = new Lecturer(id, name, initial, email, studyProgram);
+                                    ^
+  required: String,String,String,String,String,String
+  found:    String,String,String,String,String
+  reason: actual and formal argument lists differ in length
+4 errors
+make: *** [compile] Error 1
+
+D:\samuel sitio\SAMUEL\Pemrograman berorientasi Objek\github 3\2324-ge-t05-advanced-academic-stats-samuelsitio26>make -s t
+est_02
+Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+        The constructor Student(String, String, String, String) is undefined
+        The constructor Lecturer(String, String, String, String, String) is undefined
+
+        at academic.driver.Driver2.main(Driver2.java:49)
+make: *** [test_02] Error 1
+
+dengan menggunakan harus menggunakan konsep inheritance
+
+
+The constructor Student(String, String, String, String) is undefinedJava(134217858)
