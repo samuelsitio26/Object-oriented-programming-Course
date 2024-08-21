@@ -1,0 +1,5 @@
+// promt gpt
+
+User
+Error: ENOENT: no such file or directory, open '/home/runner/work/2324-ge-t07-disjoined-samuelsitio26/2324-ge-t07-disjoined-samuelsitio26/.github/classroom/autograding.json'
+Error: Autograding failure: Error: ENOENT: no such file or directory, open '/home/runner/work/2324-ge-t07-disjoined-samuelsitio26/2324-ge-t07-disjoined-samuelsitio26/.github/classroom/autograding.json'
